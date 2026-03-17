@@ -1,0 +1,16 @@
+[
+  { "sourceColumn": "Vorn.",     "targetField": "vorname",          "confidence": "medium", "autoMapped": true,  "aiSuggestion": true },
+  { "sourceColumn": "Nachname",  "targetField": "nachname",         "confidence": "high",   "autoMapped": true,  "aiSuggestion": false },
+  { "sourceColumn": "MitarbNr",  "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Schulung",  "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Anfang",    "targetField": "startdatum",       "confidence": "medium", "autoMapped": true,  "aiSuggestion": true  },
+  { "sourceColumn": "Ende_Dat",  "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Art",       "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Bereich",   "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Anbieter",  "targetField": "veranstalter",     "confidence": "medium", "autoMapped": true,  "aiSuggestion": true  },
+  { "sourceColumn": "Kosten",    "targetField": "kosten",           "confidence": "medium", "autoMapped": true,  "aiSuggestion": false },
+  { "sourceColumn": "Zertif.",   "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Bemerk.",   "targetField": "notizen",          "confidence": "medium", "autoMapped": true,  "aiSuggestion": true  },
+  { "sourceColumn": "Sem-Nr",    "targetField": null,               "confidence": "none",   "autoMapped": false, "aiSuggestion": false },
+  { "sourceColumn": "Ort",       "targetField": "veranstaltungsort","confidence": "medium", "autoMapped": true,  "aiSuggestion": true  }
+]

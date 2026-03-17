@@ -1,0 +1,29 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "datenimport (Vite)",
+      "runtimeExecutable": "/Users/enricoreinsdorf/.nvm/versions/node/v25.5.0/bin/node",
+      "runtimeArgs": ["node_modules/.bin/vite", "--port", "5173"],
+      "port": 5173
+    },
+    {
+      "name": "red-pws-001 (Vue CLI)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/enricoreinsdorf/Projekte/AKDB/red-pws-001", "run", "serve"],
+      "port": 8080
+    },
+    {
+      "name": "formfigma (Vue CLI)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/enricoreinsdorf/Projekte/AKDB/formfigma", "run", "serve"],
+      "port": 8080
+    },
+    {
+      "name": "seminarhistorie (Vue CLI)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "/Users/enricoreinsdorf/Projekte/AKDB/seminarhistorie", "run", "serve"],
+      "port": 8080
+    }
+  ]
+}

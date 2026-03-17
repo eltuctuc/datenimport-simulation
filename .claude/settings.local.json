@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat /Users/enricoreinsdorf/Projekte/AKDB/ux-demo/zgc-02-2025-demo-04/src/data/*.json)",
+      "Bash(cat /Users/enricoreinsdorf/Projekte/AKDB/seminarhistorie/src/data/*.json)",
+      "Bash(npm create:*)",
+      "Bash(export PATH=\"/Users/enricoreinsdorf/.nvm/versions/node/v25.5.0/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(printf 'y\\\\n')",
+      "Bash(npm install:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(/bin/cat /Users/enricoreinsdorf/Projekte/AKDB/datenimport/src/views/HomeView.vue)",
+      "Bash(/bin/ls /Users/enricoreinsdorf/Projekte/AKDB/datenimport/src/mock/)",
+      "Bash(node scripts/generate-assets.mjs)",
+      "Bash(export PATH=\"/Users/enricoreinsdorf/.nvm/versions/node/v25.5.0/bin:/usr/bin:/bin:$PATH\")",
+      "Bash(gh auth:*)",
+      "Bash(gh api:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//usr/local/**)",
+      "Bash(/opt/homebrew/bin/gh auth:*)",
+      "Bash(/opt/homebrew/bin/gh api:*)"
+    ]
+  }
+}

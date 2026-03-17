@@ -1,0 +1,12 @@
+[
+  { "mitarbeiterId": "MA-10001", "vorname": "Petra", "nachname": "Hofmann", "abteilung": "IT-Infrastruktur", "vorgesetzter": "Bernd Keller" },
+  { "mitarbeiterId": "MA-10002", "vorname": "Thomas", "nachname": "Brandt", "abteilung": "Rechtsabteilung", "vorgesetzter": "Sabine Mayer" },
+  { "mitarbeiterId": "MA-10003", "vorname": "Sandra", "nachname": "Werner", "abteilung": "Personalwesen", "vorgesetzter": "Klaus Fischer" },
+  { "mitarbeiterId": "MA-10004", "vorname": "Markus", "nachname": "Schulz", "abteilung": "Finanzen", "vorgesetzter": "Ute Richter" },
+  { "mitarbeiterId": "MA-10005", "vorname": "Julia", "nachname": "Bauer", "abteilung": "IT-Entwicklung", "vorgesetzter": "Bernd Keller" },
+  { "mitarbeiterId": "MA-10006", "vorname": "Andreas", "nachname": "Klein", "abteilung": "Compliance", "vorgesetzter": "Sabine Mayer" },
+  { "mitarbeiterId": "MA-10007", "vorname": "Claudia", "nachname": "Neumann", "abteilung": "Management", "vorgesetzter": "Dieter Vogt" },
+  { "mitarbeiterId": "MA-10008", "vorname": "Stefan", "nachname": "Zimmermann", "abteilung": "IT-Infrastruktur", "vorgesetzter": "Bernd Keller" },
+  { "mitarbeiterId": "MA-10009", "vorname": "Monika", "nachname": "Hartmann", "abteilung": "Verwaltung", "vorgesetzter": "Klaus Fischer" },
+  { "mitarbeiterId": "MA-10010", "vorname": "Ralf", "nachname": "Schwarz", "abteilung": "Rechtsabteilung", "vorgesetzter": "Sabine Mayer" }
+]

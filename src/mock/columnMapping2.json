@@ -1,0 +1,15 @@
+[
+  { "sourceColumn": "Vorname",        "targetField": "vorname",               "confidence": "high",   "autoMapped": true  },
+  { "sourceColumn": "Nachname",       "targetField": "nachname",              "confidence": "high",   "autoMapped": true  },
+  { "sourceColumn": "Mitarbeiter-Nr.","targetField": "mitarbeiterId",         "confidence": "high",   "autoMapped": true  },
+  { "sourceColumn": "Seminar",        "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Start",          "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Ende",           "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Typ",            "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Online/Präsenz", "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Bereich",        "targetField": "seminarbereich",        "confidence": "medium", "autoMapped": true  },
+  { "sourceColumn": "Veranstalter",   "targetField": "veranstalter",          "confidence": "medium", "autoMapped": true  },
+  { "sourceColumn": "Kosten",         "targetField": "kosten",                "confidence": "high",   "autoMapped": true  },
+  { "sourceColumn": "Bescheinigung",  "targetField": null,                    "confidence": "none",   "autoMapped": false },
+  { "sourceColumn": "Kommentare",     "targetField": "notizen",               "confidence": "medium", "autoMapped": true  }
+]
