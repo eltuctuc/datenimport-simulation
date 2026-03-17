@@ -75,6 +75,28 @@ Nutzer fotografieren einen Tabellenausdruck oder laden einen PDF-Scan hoch. Eine
 
 ---
 
+## Screenshots der Anwendung
+
+![Dashboard](public/screenshots/01-dashboard.png)
+*Startseite — Übersicht der drei Methoden mit Fortschrittsanzeige*
+
+![Methode 1 — Daten prüfen](public/screenshots/02-methode1-daten-pruefen.png)
+*Methode 1, Schritt 3: Review-Tabelle mit 15 Einträgen aus der Excel-Vorlage*
+
+![Methode 2 — Datei hochladen](public/screenshots/03-methode2-upload.png)
+*Methode 2, Schritt 1: Dropzone für eigene Excel-Datei*
+
+![Methode 2 — Spaltenzuordnung](public/screenshots/04-methode2-spaltenzuordnung.png)
+*Methode 2, Schritt 2: Automatische Spaltenerkennung mit Konfidenz-Badges*
+
+![Methode 3 — Feedback](public/screenshots/05-methode3-feedback.png)
+*Methode 3, Schritt 7: Befülltes Feedback-Formular mit Sternebewertung*
+
+![Auswertung](public/screenshots/06-auswertung.png)
+*Ergebnis-Dashboard: Vergleich aller drei Methoden mit exportierbarem Bericht*
+
+---
+
 ## Besondere Herausforderungen
 
 ### nvm und PATH
