@@ -3,12 +3,16 @@ import { useFeedbackStore } from '@/stores/useFeedbackStore'
 
 const METHODE_LABELS = {
   1: 'Methode 1 – Excel-Vorlage',
-  2: 'Methode 2 – Eigene Excel-Datei',
-  3: 'Methode 3 – Bild / PDF-Scan',
+  2: 'Methode 2 – Eigene Excel',
+  3: 'Methode 3 – Bild / PDF',
 }
 
 function stars(n) {
   return n ? '★'.repeat(n) + '☆'.repeat(5 - n) : '–'
+}
+
+function esc(str) {
+  return str ? String(str).replace(/\|/g, '\\|') : ''
 }
 
 export function useMarkdownExport() {
@@ -30,7 +34,7 @@ export function useMarkdownExport() {
         md += `| Einfachheit | ${stars(fb.einfachheit)} (${fb.einfachheit}/5) |\n`
         md += `| Praxisnähe | ${stars(fb.praxisnaehe)} (${fb.praxisnaehe}/5) |\n`
         md += `| Neuartigkeit | ${stars(fb.neuartigkeit)} (${fb.neuartigkeit}/5) |\n\n`
-        if (fb.anmerkungen) md += `**Anmerkungen:** ${fb.anmerkungen}\n\n`
+        if (fb.anmerkungen) md += `**Anmerkungen:** ${esc(fb.anmerkungen)}\n\n`
       } else {
         md += `_Noch nicht abgeschlossen._\n\n`
       }
@@ -41,7 +45,7 @@ export function useMarkdownExport() {
       const cf = feedbackStore.comparativeFeedback
       md += `---\n\n## Vergleichendes Fazit\n\n`
       md += `**Bevorzugte Methode:** ${METHODE_LABELS[cf.bevorzugteMethode]}\n\n`
-      if (cf.begruendung) md += `**Begründung:** ${cf.begruendung}\n\n`
+      if (cf.begruendung) md += `**Begründung:** ${esc(cf.begruendung)}\n\n`
     }
 
     // Importierte Datensätze
@@ -51,7 +55,7 @@ export function useMarkdownExport() {
       md += `| Nr. | Mitarbeiter-ID | Bezeichnung | Startdatum | Status | Seminartyp |\n`
       md += `|---|---|---|---|---|---|\n`
       records.forEach((r, i) => {
-        md += `| ${i + 1} | ${r.mitarbeiterId} | ${r.bezeichnung} | ${r.startdatum} | ${r.status} | ${r.seminartyp} |\n`
+        md += `| ${i + 1} | ${esc(r.mitarbeiterId)} | ${esc(r.bezeichnung)} | ${esc(r.startdatum)} | ${esc(r.status)} | ${esc(r.seminartyp)} |\n`
       })
     } else {
       md += `_Keine Datensätze importiert._\n`

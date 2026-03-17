@@ -29,7 +29,7 @@ const corrections = ref({})
 
 function next() {
   wizard.setSelected(selectedIds.value)
-  store.methode2.dropdownCorrections = corrections.value
+  store.setDropdownCorrections(2, corrections.value)
   emit('next')
 }
 </script>

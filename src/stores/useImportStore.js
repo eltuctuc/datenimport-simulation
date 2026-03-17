@@ -51,6 +51,10 @@ export const useImportStore = defineStore('import', () => {
     m.dropdownCorrections[recordId][field] = value
   }
 
+  function setDropdownCorrections(methode, corrections) {
+    getMethode(methode).dropdownCorrections = { ...corrections }
+  }
+
   function setImportResult(methode, result) {
     getMethode(methode).importResult = result
     getMethode(methode).completed = true
@@ -81,6 +85,7 @@ export const useImportStore = defineStore('import', () => {
     setColumnMappings,
     setSelectedRecords,
     setDropdownCorrection,
+    setDropdownCorrections,
     setImportResult,
     addImportedRecords,
     resetMethode,
