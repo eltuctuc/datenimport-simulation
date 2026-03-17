@@ -17,7 +17,27 @@ echo ""
 
 if command -v python3 >/dev/null 2>&1; then
   echo "Starte Server auf http://localhost:$PORT ..."
-  python3 -m http.server $PORT --directory "$DIR" --bind 127.0.0.1 >/dev/null 2>&1 &
+
+  # SPA-fähiger Mini-Server: unbekannte Pfade → index.html
+  python3 - "$PORT" "$DIR" <<'PYEOF' &
+import sys, http.server, os
+from pathlib import Path
+
+class SPAHandler(http.server.SimpleHTTPRequestHandler):
+    def do_GET(self):
+        p = Path(self.directory + self.path.split('?')[0])
+        if not p.exists() or p.is_dir():
+            self.path = '/index.html'
+        return super().do_GET()
+    def log_message(self, *a):
+        pass
+
+port = int(sys.argv[1])
+os.chdir(sys.argv[2])
+with http.server.HTTPServer(('127.0.0.1', port), SPAHandler) as s:
+    s.serve_forever()
+PYEOF
+
   SERVER_PID=$!
   sleep 0.8
   open "http://localhost:$PORT"
@@ -25,16 +45,8 @@ if command -v python3 >/dev/null 2>&1; then
   echo "Zum Beenden: Ctrl+C drücken oder Fenster schließen."
   echo ""
   wait $SERVER_PID
-elif command -v python >/dev/null 2>&1; then
-  python -m SimpleHTTPServer $PORT &
-  SERVER_PID=$!
-  sleep 0.8
-  open "http://localhost:$PORT"
-  wait $SERVER_PID
 else
   echo "FEHLER: Python 3 nicht gefunden."
   echo "Bitte installieren Sie Python 3 von https://python.org"
-  echo "oder öffnen Sie einen Terminal und führen Sie aus:"
-  echo "  npx serve '$DIR'"
   read -p "Drücken Sie Enter zum Schließen..."
 fi
